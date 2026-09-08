@@ -14,7 +14,3 @@ zone "56.168.192.in-addr.arpa" {
     allow-notify { 192.168.56.10; };
 };
 
-
-# Zona directa esclava: recibe copias del maestro autenticadas mediante TSIG
-# type slave: indica que esta zona se sincroniza desde el servidor primario
-# masters: IP del servidor maestro hacia el que se solicitan las transferencias AXFR/IXFR
