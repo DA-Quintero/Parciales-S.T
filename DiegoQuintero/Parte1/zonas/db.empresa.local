@@ -1,0 +1,33 @@
+$TTL    300
+
+@       IN      SOA     ns1.empresa.local. admin.empresa.local. (
+                        2026090304     ; Serial AAAAMMDDNN
+                        3600           ; Refresh
+                        600            ; Retry
+                        1209600        ; Expire
+                        300 )          ; Negative Cache TTL
+
+@       IN      NS      ns1.empresa.local.
+@       IN      NS      ns2.empresa.local.
+
+@       IN      MX 10   mail.empresa.local.
+
+ns1     IN      A       192.168.50.2
+ns1     IN      AAAA    fd00:50::2
+
+ns2     IN      A       192.168.50.3
+ns2     IN      AAAA    fd00:50::3
+
+maestro IN      A       192.168.50.2
+esclavo IN      A       192.168.50.3
+cliente IN      A       192.168.50.4
+
+www     IN      A       192.168.50.10
+www     IN      AAAA    fd00:50::10
+
+mail    IN      A       192.168.50.20
+mail    IN      AAAA    fd00:50::20
+
+ftp     IN      CNAME   www.empresa.local.
+
+parcial IN	A	192.168.50.2
