@@ -1,0 +1,48 @@
+// Clave TSIG compartida con el esclavo
+key "esclavo-key" {
+    algorithm hmac-sha256;
+    secret "JkFIhdbDx1W5u9RmkJpugdAc6tK5WYRnMqdNVCiasWo=";
+};
+
+// Zona directa
+zone "empresa.local" {
+    type master;
+    file "/etc/bind/db.empresa.local";
+    allow-transfer { key esclavo-key; };
+    also-notify { 192.168.50.3; };
+};
+
+// Zona inversa
+zone "50.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192.168.50";
+    allow-transfer { key esclavo-key; };
+    also-notify { 192.168.50.3; };
+};
+
+// Logging para auditoría (queries, transfers, security en archivos separados)
+logging {
+    channel c_queries {
+        file "/var/log/named/queries.log" versions 3 size 5m;
+        severity info;
+        print-time yes;
+        print-category yes;
+    };
+    channel c_transfers {
+        file "/var/log/named/transfers.log" versions 3 size 5m;
+        severity info;
+        print-time yes;
+        print-category yes;
+    };
+    channel c_security {
+        file "/var/log/named/security.log" versions 3 size 5m;
+        severity info;
+        print-time yes;
+        print-category yes;
+    };
+
+    category queries   { c_queries; };
+    category xfer-in   { c_transfers; };
+    category xfer-out  { c_transfers; };
+    category security  { c_security; };
+};

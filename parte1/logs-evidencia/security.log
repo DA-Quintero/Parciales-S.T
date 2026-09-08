@@ -1,0 +1,10 @@
+05-Sep-2026 22:16:16.635 security: client @0x7f16cd2aba58 192.168.50.10#34275 (empresa.local): zone transfer 'empresa.local/AXFR/IN' denied
+08-Sep-2026 03:58:57.408 security: client @0x7f50112b03e8 127.0.0.1#51024 (parcial.empresa.local): query 'parcial.empresa.local/A/IN' denied
+08-Sep-2026 03:58:57.412 security: client @0x7f50112b1f68 127.0.0.1#35673 (parcial.empresa.local): query 'parcial.empresa.local/AAAA/IN' denied
+08-Sep-2026 03:58:57.416 security: client @0x7f50112b1f68 127.0.0.1#48634 (parcial.empresa.local): query 'parcial.empresa.local/A/IN' denied
+08-Sep-2026 03:58:57.416 security: client @0x7f50112b03e8 127.0.0.1#37572 (parcial.empresa.local): query 'parcial.empresa.local/AAAA/IN' denied
+08-Sep-2026 03:58:57.420 security: client @0x7f50112b03e8 127.0.0.1#54762 (parcial.empresa.local): query 'parcial.empresa.local/A/IN' denied
+08-Sep-2026 03:58:57.420 security: client @0x7f50112b1f68 127.0.0.1#42658 (parcial.empresa.local): query 'parcial.empresa.local/AAAA/IN' denied
+08-Sep-2026 03:59:02.425 security: client @0x7f50112b03e8 127.0.0.1#59110 (parcial.empresa.local): query 'parcial.empresa.local/A/IN' denied
+08-Sep-2026 03:59:02.425 security: client @0x7f50112b1f68 127.0.0.1#42658 (parcial.empresa.local): query 'parcial.empresa.local/AAAA/IN' denied
+08-Sep-2026 04:00:24.410 security: client @0x7f50112b1f68 127.0.0.1#37629 (parcial.empresa.local): query 'parcial.empresa.local/A/IN' denied

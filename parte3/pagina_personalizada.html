@@ -1,0 +1,26 @@
+sudo tee /var/www/html/pagina_personalizada.html > /dev/null <<'EOF'
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificacion de despliegue - Parte 3</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1a1a2e; color: #eaeaea; padding: 40px; }
+        .card { background: #16213e; border-radius: 10px; padding: 30px; max-width: 500px; margin: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.4); }
+        h1 { color: #0fbcf9; }
+        .dato { margin: 10px 0; }
+        .label { color: #999; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Despliegue verificado</h1>
+        <div class="dato"><span class="label">Nombre:</span><br>Santiago Torralba Alape</div>
+        <div class="dato"><span class="label">Codigo:</span><br>2230608</div>
+        <div class="dato"><span class="label">Fecha:</span><br>08 de septiembre de 2026</div>
+        <div class="dato"><span class="label">Identificador unico:</span><br>PARCIAL-SERVTEL-PARTE3-2026</div>
+        <div class="dato"><span class="label">Asignatura:</span><br>Servicios Telematicos - UAO</div>
+    </div>
+</body>
+</html>
+EOF

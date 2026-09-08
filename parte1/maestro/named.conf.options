@@ -1,0 +1,24 @@
+options {
+    directory "/var/cache/bind";
+
+    // Hardening: NUNCA resolver recursivamente
+    recursion no;
+
+    // Limitar quién puede consultar (solo nuestra red)
+    allow-query { 192.168.50.0/24; 127.0.0.1; };
+
+    // Mitigación adicional contra amplificación/DDoS
+    rate-limit {
+        responses-per-second 5;
+        window 5;
+        log-only no;
+        exempt-clients { 127.0.0.1; 192.168.50.0/24; };
+    };
+
+    dnssec-validation auto;
+    listen-on { any; };
+    listen-on-v6 { any; };
+
+    // Notificar cambios al esclavo automáticamente
+    notify yes;
+};

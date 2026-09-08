@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed>
+  <titulo>Feed de prueba - Servicios Telematicos</titulo>
+  <items>
+    <item><id>1</id><nombre>Registro uno</nombre><descripcion>Contenido de prueba para medir compresion XML</descripcion></item>
+    <item><id>2</id><nombre>Registro dos</nombre><descripcion>Contenido de prueba para medir compresion XML</descripcion></item>
+    <item><id>3</id><nombre>Registro tres</nombre><descripcion>Contenido de prueba para medir compresion XML</descripcion></item>
+    <item><id>4</id><nombre>Registro cuatro</nombre><descripcion>Contenido de prueba para medir compresion XML</descripcion></item>
+    <item><id>5</id><nombre>Registro cinco</nombre><descripcion>Contenido de prueba para medir compresion XML</descripcion></item>
+  </items>
+</feed>
