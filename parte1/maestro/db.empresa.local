@@ -1,0 +1,22 @@
+$TTL    86400
+@       IN      SOA     ns1.empresa.local. admin.empresa.local. (
+                        2026090801  ; Serial AAAAMMDDNN
+                        3600        ; Refresh
+                        900         ; Retry
+                        604800      ; Expiry
+                        300 )       ; Minimum
+
+@       IN      NS      ns1.empresa.local.
+@       IN      NS      ns2.empresa.local.
+@       IN      MX      10 mail.empresa.local.
+
+ns1     IN      A       192.168.56.10
+ns1     IN      AAAA    ::1
+ns2     IN      A       192.168.56.20
+ns2     IN      AAAA    ::2
+www     IN      A       192.168.56.10
+www     IN      AAAA    ::10
+mail    IN      A       192.168.56.10
+mail    IN      AAAA    ::10
+ftp     IN      CNAME   www.empresa.local.
+parcial     IN      A       192.168.56.10

@@ -1,0 +1,16 @@
+include "/etc/bind/keys/esclavo.key";
+
+zone "empresa.local" {
+    type slave;
+    file "/var/cache/bind/db.empresa.local";
+    masters { 192.168.56.10 key esclavo-key; };
+    allow-notify { 192.168.56.10; };
+};
+
+zone "56.168.192.in-addr.arpa" {
+    type slave;
+    file "/var/cache/bind/db.192.168.56";
+    masters { 192.168.56.10 key esclavo-key; };
+    allow-notify { 192.168.56.10; };
+};
+
