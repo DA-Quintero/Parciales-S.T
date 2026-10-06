@@ -1,0 +1,15 @@
+Global
+           Protocols: -LLMNR -mDNS +DNSOverTLS DNSSEC=no/unsupported
+    resolv.conf mode: stub
+         DNS Servers: 1.1.1.1#cloudflare-dns.com 8.8.8.8#dns.google
+Fallback DNS Servers: 1.0.0.1#cloudflare-dns.com 8.8.4.4#dns.google
+
+Link 2 (eth0)
+Current Scopes: DNS
+     Protocols: +DefaultRoute +LLMNR -mDNS +DNSOverTLS DNSSEC=no/unsupported
+   DNS Servers: 192.168.50.3 192.168.110.1 fd17:625c:f037:2::3
+    DNS Domain: lan
+
+Link 3 (eth1)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS +DNSOverTLS DNSSEC=no/unsupported
