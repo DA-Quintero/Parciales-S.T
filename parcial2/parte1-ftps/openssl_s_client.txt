@@ -1,0 +1,98 @@
+Can't use SSL_get_servername
+depth=1 C = CO, O = UAO, CN = CA-Parcial2-2230532
+verify return:1
+depth=0 C = CO, O = UAO, CN = 192.168.56.10
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C = CO, O = UAO, CN = 192.168.56.10
+   i:C = CO, O = UAO, CN = CA-Parcial2-2230532
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct  6 00:32:19 2026 GMT; NotAfter: Oct  6 00:32:19 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIEezCCAmOgAwIBAgIUB+sTTdvz2MUjRaCSUibhQUpFJl0wDQYJKoZIhvcNAQEL
+BQAwOTELMAkGA1UEBhMCQ08xDDAKBgNVBAoMA1VBTzEcMBoGA1UEAwwTQ0EtUGFy
+Y2lhbDItMjIzMDUzMjAeFw0yNjEwMDYwMDMyMTlaFw0yNzEwMDYwMDMyMTlaMDMx
+CzAJBgNVBAYTAkNPMQwwCgYDVQQKDANVQU8xFjAUBgNVBAMMDTE5Mi4xNjguNTYu
+MTAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCJJ0oVof3j3K5ozU2C
+X1gO4dwgXhm4qWEtx8GYtAg1AqZmGtEKV01OgC8yOma4egqptKFAk3CfwcnObQ+F
++q10bPkSan/nWIIfT6nMYtI/0TXW3xoEBS6WCresl2rGXFM+QrtkaKZ2oO6pZMHq
+j6CE+hJXx+Ktis9GlhPtKddKdZlDhLl9kVDdu4n3jF24Onj/UE3eebgcaqjnfIEQ
+qyTBmgYOWxg/AS5zD0f0LCDBr0mS4sHnClPtb1A2lBBX18H/6PYmCRMKRol0EBZr
+E+ou2ccYW+My5teaH8eLlyocrHoDa/+I0iv1hBYG4IAFO2HgIk2tWe7m+3raDUuf
+DbXvAgMBAAGjgYAwfjAPBgNVHREECDAGhwTAqDgKMAkGA1UdEwQCMAAwCwYDVR0P
+BAQDAgWgMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB0GA1UdDgQWBBR6bejVwGtdZLz6
+a0r2G6XVXPORkzAfBgNVHSMEGDAWgBSVl6rZugRthDeY/GUZBgiQdLVizTANBgkq
+hkiG9w0BAQsFAAOCAgEAixBsJQOPKtZ0IjxH81gJ53N/TCWxZmmKaknJGJwy4pmY
+g6gwt+TL5UEO9nrctk9/NO6mN1P6B+b63IoWipPZSYYV4x0AMp7c2J0t6ecazTKP
+mx55yn2Ag973nNgulQRwc8Vnr/XU7eVCJaKdlz/GV8Tt05FsblYBMkc3CyZ4WZNi
+VW41AZyESOwlcGNhNI4XRBa9WQnkVZIvDDcDCidNfSYUIR81DI95N3qqdOQmJ92w
+MHSBbWyBU0KOoBxeA84UnxPmiM3J2YItATkGxO2IyG3B4HeXyfpAm0HTYv7wsO+l
+6bs+255VFIaJoBn4GIsTFzidiDSbt+KoYu1nT7uNedp++m5WJm0QoDFZak1JiuLk
+xMAfe3j2CUsOboO82ABCRPFYMfuZf7Z0prSP6O5pr3JAwzfC4KqD5+15UU1iTh04
+VC13RKfgDAQbjxrxlLAJBZWnB3lURpY/zE1le3KiLtP6iJ/pBv+bgk2pU9ihOtjE
+njmtkXSjOfTnZi7nvK6LRokgBR4Ev5AfBRB1udVQhHZ4AHRykvZQMI97aI3GVMpL
+3mjB8NEHaV4IKjZv6BDiBiCNO5cg+/D3VPwmxYSx44rx30Y6XR6RlANBdzI0s6Kc
+6SCjjNiXgLpFxBoRQT4us7pH+0vIzW8TW815Y4mVDF2kzlUYwRqeTevR3h6J0+M=
+-----END CERTIFICATE-----
+subject=C = CO, O = UAO, CN = 192.168.56.10
+issuer=C = CO, O = UAO, CN = CA-Parcial2-2230532
+---
+No client certificate CA names sent
+Requested Signature Algorithms: ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:Ed25519:Ed448:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA224:RSA+SHA224
+Shared Requested Signature Algorithms: ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:Ed25519:Ed448:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 1951 bytes and written 739 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+220 (vsFTPd 3.0.5)
+DONE
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 54C66861B087D86879149BF39EB40A57FBF25AB842A74987B3F527F6A1414B77
+    Session-ID-ctx: 
+    Resumption PSK: FA8234DC982E1CE065862936D9D67E94C2441C5C5882A45A3223C196925C81731F6B66E6A12AEC858DD9C9D7A4BC0665
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 2e 59 cd b1 1d 8f da 96-4c 0c 53 f1 62 b4 d7 c8   .Y......L.S.b...
+    0010 - 46 35 ae 6d 7d 52 84 90-c8 39 0e c0 38 15 46 03   F5.m}R...9..8.F.
+    0020 - 9c 88 9c fa 8d f1 e1 81-48 46 37 33 26 bc 2f aa   ........HF73&./.
+    0030 - cb de a0 34 6d a6 17 77-d4 cd 3f 46 d5 da 3c 08   ...4m..w..?F..<.
+    0040 - e4 ff a7 4d 53 e8 22 16-9a 25 43 4a 01 29 09 0d   ...MS."..%CJ.)..
+    0050 - ca 46 a9 eb ae 24 be bb-46 67 1a 75 3f a6 46 72   .F...$..Fg.u?.Fr
+    0060 - 44 93 33 ff e8 58 fd 5f-e2 1b 6f 43 4d 11 4b 2f   D.3..X._..oCM.K/
+    0070 - 42 a7 df fb df 21 3a 61-23 8d b7 a7 2e 75 61 b2   B....!:a#....ua.
+    0080 - fe df b4 be 4f c3 7a e1-6c e6 a4 fb 43 ac 62 6e   ....O.z.l...C.bn
+    0090 - fa 7c 10 db 22 ca 30 4b-16 a4 d1 18 e4 a5 1a 25   .|..".0K.......%
+    00a0 - 54 25 9c dc d0 e9 e0 46-c1 3a fa bd 72 80 1a 3e   T%.....F.:..r..>
+    00b0 - 01 96 2d 1c db 89 c4 cb-7c 9e e6 5e d8 af a9 06   ..-.....|..^....
+    00c0 - 9b d9 e2 3c c4 e8 e4 88-fb 8e db 41 56 ea 38 a1   ...<.......AV.8.
+
+    Start Time: 1791252586
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
